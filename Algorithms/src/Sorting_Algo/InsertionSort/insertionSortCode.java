@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class insertionSortCode {
     public static void main(String[] args) {
-        int[] arr = {1,4,7,5,67,7};
+        int[] arr = {67,81,4,7,5,67,7};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
