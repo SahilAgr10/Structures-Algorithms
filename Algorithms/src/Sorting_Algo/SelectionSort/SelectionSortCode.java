@@ -21,7 +21,5 @@ public class SelectionSortCode {
         for(int i =0;i<=last;i++){
             if(arr[max]<arr[i]){
                 max=i;
-            }
-        } return max;
-    }
-}
+            }} return max;
+    }}
