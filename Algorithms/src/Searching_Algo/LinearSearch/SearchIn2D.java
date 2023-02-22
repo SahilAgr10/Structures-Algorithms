@@ -11,13 +11,12 @@ public class SearchIn2D {
     }
     static int findMin(int[][] arr){
         int min = Integer.MAX_VALUE;
-        for(int row =0;row<arr.length;row++){
-            for(int column=0;column<arr[row].length;column++){
-                if(arr[row][column] < min){
-                    min=arr[row][column];
+        for (int[] ints : arr) {
+            for (int element :ints) {
+                if (element < min) {
+                    min = element;
                 }
             }
-
         }
         return min;
     }
