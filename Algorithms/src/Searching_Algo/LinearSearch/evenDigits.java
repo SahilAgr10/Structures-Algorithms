@@ -1,5 +1,4 @@
 package Searching_Algo.LinearSearch;
-
 public class evenDigits {
     public static void main(String[] args) {
         int[] arr = {12,34,6789,87653,578389572};
@@ -20,5 +19,4 @@ public class evenDigits {
 //        } return count;
         return (int)(Math.log10(num) + 1);
     }
-
 }
