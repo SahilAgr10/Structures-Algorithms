@@ -7,22 +7,18 @@ public class evenDigits {
     }
     static int evenDigit(int arr[]){
         int count =0;
-        for(int i =0;i<arr.length;i++){
-            if(digitIsEven(arr[i])){
-                count++;
-            }
-        }return count;
+        for (int j : arr) {
+            if (digitIsEven(j)) { count++;
+            }} return count;
     }
     static boolean digitIsEven(int num){
-        if(even(num)%2==0) return true;
-        return false;
+        return even(num) % 2 == 0;
     }
     static int even(int num){
-        int count=0;
-        while(num!=0){
-            count++;
-            num = num/10;
-        }
-        return count;
+//        int count=0;  while(num!=0){
+//        count++;   num = num/10;
+//        } return count;
+        return (int)(Math.log10(num) + 1);
     }
+
 }
