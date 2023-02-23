@@ -5,7 +5,6 @@ public class MaxWealth {
         int[][] accounts = {{4,5,2},{8,9,6},{7,5,3}};
         System.out.println(maxWealth(accounts));
     }
-
     private static int maxWealth(int[][] accounts) {
         int ans = 0;
         for(int[]account:accounts){
