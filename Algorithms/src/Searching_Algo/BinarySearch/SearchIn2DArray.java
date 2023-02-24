@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class SearchIn2DArray {
     public static void main(String[] args) {
+        // row and column wise sorted matrix
         int[][] arr = {{10,20,30},{15,25,35},{40,50,60}};
         int target = 60;
         System.out.println(Arrays.toString(search(arr,target)));
@@ -18,9 +19,6 @@ public class SearchIn2DArray {
                 col--;
             } if(arr[row][col] < target){
                 row++;
-            }
-
-        }
-        return new int[]{-1,-1};
+            }} return new int[]{-1,-1};
     }
 }
