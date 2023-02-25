@@ -1,32 +1,24 @@
 package Searching_Algo.BinarySearch;
 
+import java.util.Arrays;
+
 public class rowColSorted {
     public static void main(String[] args) {
         // row and column wise sorted matrix
-        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        int target = 6;
-        search(matrix,target);
+        int[][] arr = {{10,20,30},{15,25,35},{40,50,60}};
+        int target = 60;
+        System.out.println(Arrays.toString(search(arr,target)));
     }
-    static int[] search(int[][] matrix ,int target){
-        int row = matrix.length-1;
-        int col =matrix[row].length;
-        if(matrix.length == 1){
-//            binarySearch(matrix,row,);
-        }
-        return new int[]{-1,-1};
+    static int[] search(int[][] arr,int target){
+        int row = 0;
+        int col = arr.length-1;
+        while(row< arr.length && col > 0){
+            if(arr[row][col]==target){
+                return new int[]{row,col};
+            } if(arr[row][col] > target){
+                col--;
+            } if(arr[row][col] < target){
+                row++;
+            }} return new int[]{-1,-1};
     }
-    static int[] binarySearch(int[][] matrix,int row,int cStart,int cEnd,int target){
-        while(cStart<=cEnd){
-            int mid = cStart+(cEnd-cStart)/2;
-            if(matrix[row][mid]==target){
-                return new int[]{row,mid};
-            } if(matrix[row][mid] < target){
-                cStart=mid+1;
-            } else{
-                cEnd=mid-1;
-            }
-        }
-        return new int[]{-1,-1};
-    }
-
 }
