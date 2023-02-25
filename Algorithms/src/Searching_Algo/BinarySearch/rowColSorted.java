@@ -1,8 +1,6 @@
 package Searching_Algo.BinarySearch;
 
-import java.util.Arrays;
-
-public class SortedMatrix {
+public class rowColSorted {
     public static void main(String[] args) {
         // row and column wise sorted matrix
         int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
