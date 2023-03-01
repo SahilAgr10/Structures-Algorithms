@@ -1,8 +1,8 @@
-package Sorting_Algo.BubbleSort.B;
+package Sorting_Algo.BubbleSort;
 
 import java.util.Arrays;
 
-public class SortUSingRec {
+public class BsortUsingRec {
     public static void main(String[] args) {
         int[] arr = {6,4,2,8,1};
         sort(arr,5,0);
