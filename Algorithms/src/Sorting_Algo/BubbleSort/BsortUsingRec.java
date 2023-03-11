@@ -12,7 +12,7 @@ public class BsortUsingRec {
         if(row==0){
             return;
         }
-        if(col<row-1){
+    if(col<row-1){
             if(arr[col]>arr[col+1]){
                 int temp= arr[col];
                 arr[col]= arr[col+1];
