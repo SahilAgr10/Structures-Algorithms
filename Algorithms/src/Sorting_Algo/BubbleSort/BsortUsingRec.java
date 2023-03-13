@@ -19,8 +19,6 @@ public class BsortUsingRec {
                 arr[col+1]=temp;
             }
             sort(arr,row,col+1);
-
-
         }else{
             sort(arr,row-1,0);
 
