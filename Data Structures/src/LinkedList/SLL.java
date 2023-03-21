@@ -9,6 +9,23 @@ public class SLL {
         this.size = 0;
     }
     public void insertFirst(int value){
+        Node node = new Node(value);
+        node.next=head;
+        head=node;
+        size+=1;
+        if(tail==null){
+            tail=head;
+        }
+    }
+    public void insertLast(int value){
+        if(head==null){
+            insertFirst(value);
+            return;
+        }
+        Node node = new Node(value);
+        tail.next=head;
+        tail=node;
+        size+=1;
 
     }
 
